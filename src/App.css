@@ -80,3 +80,37 @@
   text-decoration: none;
   color: #000;
 }
+
+@media (max-width: 600px) {
+  .App {
+    padding: 20px;
+  }
+  .navbar .brand {
+    display: none;
+  }
+  .hero__component h1, .hero__component p {
+    width: 100%;
+  }
+  .hero__component h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .App {
+    padding: 20px;
+  }
+  .hero__component h1, .hero__component p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 280px) {
+  .hero__component {
+    margin-top: 40px;
+  }
+  .hero__component p {
+    margin-top: 20px;
+  }
+}
