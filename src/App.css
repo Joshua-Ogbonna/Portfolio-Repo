@@ -1,38 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,500&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
+  padding: 40px 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navigation */
+.navbar .brand h5 {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar,
+.navbar .links ul {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.navbar .links ul {
+  width: 200px;
+}
+.navbar .links ul li {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 300;
+}
+.navbar .links ul a {
+  text-decoration: none;
+  color: #000;
 }
 
-.App-link {
-  color: #61dafb;
+/* Hero */
+.hero__component {
+  margin-top: 60px;
+}
+.hero__component span {
+  font-weight: 300;
+}
+.hero__component h1 {
+  margin-top: 10px;
+  font-size: 50px;
+  /* font-family: 'Lato', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  width: 550px;
+  line-height: 60px;
+}
+.hero__component h1 span {
+  border-bottom: 1px solid #000;
+  transition: 0.8s ease-in-out;
+  /* color: #fff; */
+  /* font-weight: 800; */
+}
+.hero__component h1 span:hover {
+  background: #000;
+  color: #fff;
+}
+.hero__component p {
+  margin-top: 40px;
+  width: 600px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero__component .social__icons {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.hero__component .social__icons i {
+  font-size: 30px;
+  cursor: pointer;
+}
+.hero__component .social__icons a {
+  text-decoration: none;
+  color: #000;
 }
