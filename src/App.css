@@ -58,7 +58,7 @@
   background: #000;
   color: #fff;
 }
-.hero__component p {
+.hero__component > p {
   margin-top: 40px;
   width: 600px;
   font-family: 'Open Sans', sans-serif;
@@ -81,6 +81,46 @@
   color: #000;
 }
 
+.hero__component .projects {
+  margin-top: 50px;
+}
+.hero__component .projects h3 {
+  font-size: 24px;
+  text-decoration: underline;
+}
+.hero__component .projects .project__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hero__component .projects .project__cards .project__card {
+  width: 600px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.hero__component .projects .project__cards .project__card h5 {
+  font-size: 16px;
+}
+.hero__component .projects .project__cards .project__card p {
+  font-size: 14px;
+  width: 500px;
+}
+.hero__component .projects .project__cards .project__card .technologies {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.hero__component .projects .project__cards .project__card .technologies div {
+  margin-right: 10px;
+}
+.hero__component .projects .project__cards .project__card a {
+  font-size: 15px;
+  color: #000;
+}
+
 @media (max-width: 600px) {
   .App {
     padding: 20px;
@@ -94,6 +134,19 @@
   .hero__component h1 {
     font-size: 30px;
     line-height: 40px;
+  }
+  .hero__component .projects .project__cards .project__card {
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .hero__component .projects .project__cards .project__card h5 {
+    font-size: 16px;
+  }
+  .hero__component .projects .project__cards .project__card p {
+    font-size: 14px;
+    width: 100%;
   }
 }
 
